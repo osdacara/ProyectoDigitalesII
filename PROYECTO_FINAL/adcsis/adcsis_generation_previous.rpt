@@ -1,0 +1,67 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis\simulation --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading PROYECTO_FINAL/adcsis.qsys
+Progress: Reading input file
+Progress: Adding adc_mega_0 [altera_up_avalon_adc_mega 17.0]
+Progress: Parameterizing module adc_mega_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: adcsis: Generating adcsis "adcsis" for SIM_VHDL
+Info: adc_mega_0: Starting Generation of ADC Controller for DE-series Board
+Info: adc_mega_0: C:/intelfpga/17.0/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v C:/Users/marve/AppData/Local/Temp/alt8109_3477999272925626673.dir/0001_sopcgen/adcsis_adc_mega_0.v
+Error: adc_mega_0: Generation callback did not provide a top level file (expected `add_file $output_dir/adcsis_adc_mega_0.v|vhd|sv {SIMULATION SYNTHESIS}`)
+Warning: adc_mega_0: No files generated for fileset SIM_VHDL
+Info: adc_mega_0: "adcsis" instantiated altera_up_avalon_adc_mega "adc_mega_0"
+Info: adcsis: Done "adcsis" with 2 modules, 1 files
+Error: qsys-generate failed with exit code 1: 1 Error, 1 Warning
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis\adcsis.spd --output-directory=C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis\adcsis.spd --output-directory=C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/marve/Downloads/Final_3/Final_3/PROYECTO_FINAL/adcsis/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis.qsys --block-symbol-file --output-directory=C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading PROYECTO_FINAL/adcsis.qsys
+Progress: Reading input file
+Progress: Adding adc_mega_0 [altera_up_avalon_adc_mega 17.0]
+Progress: Parameterizing module adc_mega_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis.qsys --synthesis=VHDL --output-directory=C:\Users\marve\Downloads\Final_3\Final_3\PROYECTO_FINAL\adcsis\synthesis --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading PROYECTO_FINAL/adcsis.qsys
+Progress: Reading input file
+Progress: Adding adc_mega_0 [altera_up_avalon_adc_mega 17.0]
+Progress: Parameterizing module adc_mega_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: adcsis: Generating adcsis "adcsis" for QUARTUS_SYNTH
+Info: adc_mega_0: Starting Generation of ADC Controller for DE-series Board
+Info: adc_mega_0: C:/intelfpga/17.0/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v C:/Users/marve/AppData/Local/Temp/alt8109_3477999272925626673.dir/0003_sopcgen/adcsis_adc_mega_0.v
+Info: adc_mega_0: "adcsis" instantiated altera_up_avalon_adc_mega "adc_mega_0"
+Info: adcsis: Done "adcsis" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

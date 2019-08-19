@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Aug 18 14:09:52 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : PIANO2
+Top-level Entity Name : piano_ordenado_final2
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,736 / 22,320 ( 8 % )
+    Total combinational functions : 1,569 / 22,320 ( 7 % )
+    Dedicated logic registers : 994 / 22,320 ( 4 % )
+Total registers : 994
+Total pins : 77 / 154 ( 50 % )
+Total virtual pins : 0
+Total memory bits : 1,152 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

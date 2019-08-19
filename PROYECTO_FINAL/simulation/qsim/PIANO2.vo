@@ -1,0 +1,81 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition"
+
+// DATE "08/10/2019 17:54:09"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module prueba (
+	menor,
+	igual);
+output 	menor;
+output 	igual;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \menor~output_o ;
+wire \igual~output_o ;
+
+
+cycloneive_io_obuf \menor~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\menor~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \menor~output .bus_hold = "false";
+defparam \menor~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \igual~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\igual~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \igual~output .bus_hold = "false";
+defparam \igual~output .open_drain_output = "false";
+// synopsys translate_on
+
+assign menor = \menor~output_o ;
+
+assign igual = \igual~output_o ;
+
+endmodule

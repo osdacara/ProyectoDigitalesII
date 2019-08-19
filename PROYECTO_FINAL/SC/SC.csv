@@ -1,0 +1,17 @@
+# system info SC on 2019.08.01.01:32:25
+system_info:
+name,value
+DEVICE,EP4CE22F17C6
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1564641143
+#
+#
+# Files generated for SC on 2019.08.01.01:32:25
+files:
+filepath,kind,attributes,module,is_top
+simulation/SC.vhd,VHDL,,SC,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+SC.adc_mega_0,SC_adc_mega_0

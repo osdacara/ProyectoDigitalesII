@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="simulation/adcsis.vhd" type="VHDL" />
+ <topLevel name="adcsis" />
+ <deviceFamily name="cycloneive" />
+</simPackage>

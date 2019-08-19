@@ -1,0 +1,17 @@
+# system info adcsis on 2019.08.01.01:37:38
+system_info:
+name,value
+DEVICE,EP4CE22F17C6
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1564641456
+#
+#
+# Files generated for adcsis on 2019.08.01.01:37:38
+files:
+filepath,kind,attributes,module,is_top
+simulation/adcsis.vhd,VHDL,,adcsis,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+adcsis.adc_mega_0,adcsis_adc_mega_0
